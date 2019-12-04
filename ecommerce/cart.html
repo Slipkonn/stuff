@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+</head>
+<body>
+  <header class="site-header">
+  	<div class="container">
+	  	<a href="./category.html" class="site-logo">Stuff</a>
+	  	<button type="button" class="menu-toggle"><i></i>Menu</button>
+	  	<form action="#" class="search-bar">
+	  		<input type="text" name="search" placeholder="Search for ...">
+	  	</form>
+	  	<a href="./cart.html" class="cart-link"><b>2</b></a>
+  	</div>
+  </header>
+  <div class="breadcrumbs">
+  	<div class="container">
+  		<ol>
+  			<li><a href="./category.html">Store</a></li>
+  			<li><span>Shopping Cart</span></li>
+  		</ol>
+  	</div>
+  </div>
+  <main class="container">
+  	<div class="main-layout category-page">
+	  	<div class="main-aside">
+	  		<h1>In Your Cart</h1>
+	  	</div>
+	  	<div class="main-right">
+	  		<div class="cart-content">
+	  			<div class="cart-items">
+	  				<div class="cart-item" id="item-1">
+	  					<img class="thumbnail" src="img/hp-white.png" alt="White">
+	  					<span class="cart-detail">
+	  						<strong class="cart-name">500BT White</strong>
+	  						<span class="cart-price">$99.95</span>
+	  						<form action="#" class="cart-qty">
+	  							<input type="text" data-min="0" class="qty" value="1">
+	  							<button type="button" class="minus">-</button>
+	  							<button type="button" class="plus">+</button>
+	  							<a href="#" onclick="alert('No way!')" class="remove">Remove</a>
+	  						</form>
+	  					</span>
+	  					<span class="item-total">
+	  						Item total
+	  						<b id="item-1-total">$99.95</b>
+	  					</span>
+	  				</div><!-- /cart item -->
+	  				<div class="cart-item" id="item-2">
+	  					<img class="thumbnail" src="img/hp-blue.png" alt="Blue">
+	  					<span class="cart-detail">
+	  						<strong class="cart-name">500BT White</strong>
+	  						<span class="cart-price">$99.95</span>
+	  						<form action="#" class="cart-qty">
+	  							<input type="text" data-min="0" class="qty" value="2">
+	  							<button type="button" class="minus">-</button>
+	  							<button type="button" class="plus">+</button>
+	  							<a href="#" onclick="alert('No way!')" class="remove">Remove</a>
+	  						</form>
+	  					</span>
+	  					<span class="item-total">
+	  						Item total
+	  						<b id="item-2-total">$199.90</b>
+	  					</span>
+	  				</div><!-- /cart item -->
+		  		</div>
+		  		<div class="cart-totals">
+		  			<table>
+		  				<tr class="total">
+		  					<th>Cart Total:</th>
+		  					<td>$299.85</td>
+		  				</tr>
+		  				<tr>
+		  					<th>Shipping:</th>
+		  					<td><a href="#">Calculate shipping cost</a></td>
+		  				</tr>
+		  			</table>
+		  		</div>
+		  		<div class="cart-actions">
+		  			<a href="#" class="btn btn-round btn-green">Super-Fun Checkout!</a>
+		  		</div>
+	  		</div>
+	  	</div>
+	  </div>
+  </main>
+  <footer class="site-footer">
+  	<div class="container">
+  		<span class="tel"><b>Order&Support:</b> <a href="tel:18007242216">1-800-724-2216</a></span>
+  		<span class="copy">© 2007-2019 Stuff Electrical Supply</span>
+  	</div>
+  </footer>
+
+</body>
+</html>
