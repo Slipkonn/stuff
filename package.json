@@ -1,0 +1,22 @@
+{
+  "name": "stuff",
+  "version": "1.0.0",
+  "description": "Dzzzzzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slipkonn/stuff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slipkonn/stuff/issues"
+  },
+  "homepage": "https://github.com/Slipkonn/stuff#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
