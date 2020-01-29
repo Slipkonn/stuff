@@ -32,11 +32,11 @@ a:hover
 
 .btn-green
   color: #fff
-  box-shadow: 0 10px 18px 0 rgba(41, 163, 106, 0.21)
-  background-image: linear-gradient(to bottom, #3ee988, #19ae96)
+  box-shadow: 0 5px 18px 0 rgba(41, 163, 106, 0.21)
+  background-image: linear-gradient(to bottom, #55d2b5, #19ae96)
   &:hover
     opacity: .8
-    box-shadow: 0 15px 25px 0 rgba(41, 163, 106, 0.5)
+    box-shadow: 0 15px 25px 0 rgba(41, 163, 106, 0.3)
 
 
 button 
@@ -116,7 +116,19 @@ button
   .search-bar
     margin: 0 auto
     position: relative
-    &:before 
+    &::before
+      content: ''
+      position: absolute
+      top: -5px
+      left: -20px
+      right: -20px
+      bottom: -5px
+      background: #f4f4f4
+      border-radius: 25px
+      opacity: 0
+      transition: all .2s ease-out
+      z-index: 0
+    &::after 
       content: ''
       position: absolute
       width: 24px
@@ -125,11 +137,18 @@ button
       left: 0
       pointer-events: none
       background: url(../img/search.svg) no-repeat 0 45%
+      z-index: 1
+    &:hover::before,
+    &:focus::before
+      opacity: 1
     input
       padding: 10px 0 10px 35px
       border: none
       border-bottom: 1px solid transparent
       font-size: 14px
+      background: transparent
+      position: relative
+      z-index: 1
       &:focus 
         border-color: #777
         outline: none
@@ -263,11 +282,11 @@ button
         transform: translate3d(0,-10px,0)
 
     &.styled-red
-      background-image: linear-gradient(to bottom, #dedede, #f52e40)
+      background-image: linear-gradient(to bottom, #f9d6be, #f52e40)
     &.styled-blue
       background-image: linear-gradient(to bottom, #eb69b0, #868fbd)
     &.styled-green
-      background-image: linear-gradient(to bottom, #ecede2, #4aa978)
+      background-image: linear-gradient(to bottom, #ddeaf1, #4aa978)
       
 
   
