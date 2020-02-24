@@ -54,7 +54,7 @@ function renderCart() {
 
 
 function changeInputQty(event) {
-  var btn = event.target    
+  var btn = event.target;
   btn.parentNode.childNodes.forEach( function(el){
     if (el.className == 'qty') {                
       if (btn.textContent == '+') {
